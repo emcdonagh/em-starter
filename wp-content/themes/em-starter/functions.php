@@ -65,6 +65,13 @@ if ( ! function_exists( 'em_starter_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+ //add theme support for Custom logo
+   //   add_theme_support( 'custom-logo', array(
+		//  'width' => 90,
+		//  'height' => 90;
+		//  'flex-width' = true,
+	//  ) );
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -74,10 +81,10 @@ if ( ! function_exists( 'em_starter_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 90,
+			'width'       => 90,
 			'flex-width'  => true,
-			'flex-height' => true,
+			//'flex-height' => true,
 		) );
 	}
 endif;
