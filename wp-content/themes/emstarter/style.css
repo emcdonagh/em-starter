@@ -375,7 +375,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: white;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -1120,4 +1120,4 @@ object {
 	display: block;
 }
 
-/*# sourceMappingURL=../em-starter/sass/maps/style.css.map */
+/*# sourceMappingURL=../emstarter/sass/maps/style.css.map */

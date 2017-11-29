@@ -135,7 +135,7 @@ wp_enqueue_style('emstarter-fonts', 'https://fonts.googleapis.com/css?family=PT+
 
 	wp_enqueue_script( 'emstarter-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 
-	wp_localize_script('emstarter','emstarterScreenReaderText', array(
+	wp_localize_script('emstarter-navigation','emstarterScreenReaderText', array(
 		'expand'   => __('Expand child menu', 'emstarter'),
 		'collapse' => __('Collapse child menu', 'emstarter'),
 	));
