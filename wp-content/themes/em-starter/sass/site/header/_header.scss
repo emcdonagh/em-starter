@@ -79,7 +79,7 @@ font-weight: 100;
     .site-header {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
     }
 
     .site-branding {
@@ -91,3 +91,7 @@ font-weight: 100;
         width: 55%;
     }
 }
+
+// adds header
+
+@import "header-menu";

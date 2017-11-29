@@ -44,7 +44,9 @@ if ( ! function_exists( 'em_starter_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'em-starter' ),
+			'menu-1' => esc_html__( 'Header', 'em-starter' ), 
+			'menu-2' => esc_html__( 'Footer', 'em-starter' ),
+			
 		) );
 
 		/*
@@ -131,7 +133,12 @@ wp_enqueue_style('em-starter-fonts', 'https://fonts.googleapis.com/css?family=PT
 
 	wp_enqueue_style( 'em-starter-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'em-starter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'em-starter-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+
+	wp_localize_script ('em-starter','em_starterScreenReaderText', array(
+		'expand'   => __('Expand child menu', 'em-starter'),
+		'collapse' => __('Collapse child menu', 'em-starter'),
+	));
 
 	wp_enqueue_script( 'em-starter-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

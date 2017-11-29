@@ -14,6 +14,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+<nav class="social-menu">
+	<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-2',
+					'menu_id'        => 'nav-menu',
+				) );
+			?>
+</nav>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'em-starter' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
