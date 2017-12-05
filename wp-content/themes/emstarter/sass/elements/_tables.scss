@@ -1,4 +1,29 @@
 table {
+	border-collapse: collapse;
 	margin: 0 0 1.5em;
 	width: 100%;
+	background-color: wheat;
+}
+
+thread th {
+
+	border-bottom: 2px solid #bbb;
+	padding-bottom: .5em;
+}
+
+td, th {
+
+	vertical-align: top;
+	border: 1px solid white;
+	padding: .5em;
+}
+
+th {
+	padding: .4em;
+	text-align: left;
+}
+
+tr {
+	padding: .4em;
+	color: white;
 }
