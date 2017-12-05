@@ -133,12 +133,14 @@ wp_enqueue_style('emstarter-fonts', 'https://fonts.googleapis.com/css?family=PT+
 
 	wp_enqueue_style( 'emstarter-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'emstarter-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'emstarter-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20171201', true );
 
 	wp_localize_script('emstarter-navigation','emstarterScreenReaderText', array(
 		'expand'   => __('Expand child menu', 'emstarter'),
 		'collapse' => __('Collapse child menu', 'emstarter'),
 	));
+//added script for full bleed cetered images functions.js
+wp_enqueue_script( 'emstarter-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20171204', true );
 
 	wp_enqueue_script( 'emstarter-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

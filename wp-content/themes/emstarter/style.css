@@ -321,7 +321,20 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	position: relative;
+	margin: 0 0 1.5em;
+	background: #eee;
+	padding: 1em 2em .5em 5em;
+}
+
+blockquote:before {
+	position: absolute;
+	top: -2em;
+	left: -.13em;
+	font-family: "Source Sans Pro", "Lucida Sans Unicode", sans-serif;
+	font-size: 12em;
+	line-height: 100%;
+	color: white;
 }
 
 address {
@@ -372,6 +385,10 @@ html {
 *:after {
 	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
+}
+
+blockquote, q {
+	quotes: "" "";
 }
 
 body {
@@ -428,7 +445,7 @@ table {
 	border-collapse: collapse;
 	margin: 0 0 1.5em;
 	width: 100%;
-	background-color: wheat;
+	background-color: #eee;
 }
 
 thread th {
@@ -445,11 +462,18 @@ td, th {
 th {
 	padding: .4em;
 	text-align: left;
+	background-color: white;
+	color: #000;
+	border: 2px solid #eee;
 }
 
 tr {
 	padding: .4em;
-	color: white;
+	color: #000;
+}
+
+td {
+	padding: .4em;
 }
 
 /*--------------------------------------------------------------
@@ -1219,6 +1243,22 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## images
+--------------------------------------------------------------*/
+.wp-caption.aligncenter,
+.centered-image {
+	max-width: 100vw;
+	margin: 0 -1em;
+}
+
+@media screen and (min-width: 600px) {
+	.wp-caption.aligncenter,
+	.centered-image {
+		margin: 0 -2em;
+	}
 }
 
 /*# sourceMappingURL=../emstarter/sass/maps/style.css.map */

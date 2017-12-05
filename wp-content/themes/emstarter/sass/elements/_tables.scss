@@ -2,7 +2,7 @@ table {
 	border-collapse: collapse;
 	margin: 0 0 1.5em;
 	width: 100%;
-	background-color: wheat;
+	background-color: $color__background-pre;
 }
 
 thread th {
@@ -21,9 +21,17 @@ td, th {
 th {
 	padding: .4em;
 	text-align: left;
+	background-color: white;
+	color: $color__text-screen;
+	border: 2px solid $color__background-pre;
 }
 
 tr {
 	padding: .4em;
-	color: white;
+	color: $color__text-screen;
 }
+
+td {
+	padding: .4em;
+}
+
