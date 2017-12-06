@@ -112,13 +112,15 @@ function emstarter_the_category_list () {
 /**
  * Post navigation (previous / next post) for single posts.
  */
-function humescores_post_navigation() {
+
+
+function emstarter_post_navigation() {
 	the_post_navigation( array(
-		'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'humescores' ) . '</span> ' .
-			'<span class="screen-reader-text">' . __( 'Next post:', 'humescores' ) . '</span> ' .
+		'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'emstarter' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Next post:', 'emstarter' ) . '</span> ' .
 			'<span class="post-title">%title</span>',
-		'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'humescores' ) . '</span> ' .
-			'<span class="screen-reader-text">' . __( 'Previous post:', 'humescores' ) . '</span> ' .
+		'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'emstarter' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Previous post:', 'emstarter' ) . '</span> ' .
 			'<span class="post-title">%title</span>',
 	) );
-}
+	}
