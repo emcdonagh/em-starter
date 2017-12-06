@@ -17,6 +17,12 @@ function emstarter_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+	if (is_active_sidebar( 'sidebar-1' )) {
+		$classes[] = 'has-sidebar'; 
+	} 
+	else { $classes[] = 'no-sidebar'; 
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'emstarter_body_classes' );

@@ -39,7 +39,7 @@ if ( ! function_exists( 'emstarter_posted_on' ) ) :
 		echo '<span class="byline"> ' . $byline . '</span><span class="posted-on"> ' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link"> ';
+			echo '<span class="comments-link"><span class="extra">Discussion</span> ';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
@@ -54,7 +54,7 @@ if ( ! function_exists( 'emstarter_posted_on' ) ) :
 					get_the_title()
 				)
 			);
-			echo '</span>';
+			echo '</span> <span class="extra"> Admin </span>';
 		}
 
 		edit_post_link(
